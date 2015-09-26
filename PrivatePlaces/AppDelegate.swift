@@ -44,3 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+
+// MARK: - Global Constants
+struct GlobalConstants{
+    static let singleUserAccount = "singleUserAccount1"
+    static let locationStore = "locationStore"
+}

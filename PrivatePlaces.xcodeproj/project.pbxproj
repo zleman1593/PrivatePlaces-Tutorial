@@ -10,9 +10,13 @@
 		A269DD5F1B83A58900C1126A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269DD5E1B83A58900C1126A /* AppDelegate.swift */; };
 		A269DD611B83A58900C1126A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269DD601B83A58900C1126A /* ViewController.swift */; };
 		A269DD641B83A58900C1126A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A269DD621B83A58900C1126A /* Main.storyboard */; };
-		A269DD661B83A58900C1126A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A269DD651B83A58900C1126A /* Images.xcassets */; };
 		A269DD691B83A58900C1126A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A269DD671B83A58900C1126A /* LaunchScreen.xib */; };
 		A269DD751B83A58900C1126A /* PrivatePlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269DD741B83A58900C1126A /* PrivatePlacesTests.swift */; };
+		A269DD801B83F79C00C1126A /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269DD7E1B83F79C00C1126A /* Locksmith.swift */; };
+		A269DD811B83F79C00C1126A /* LocksmithRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269DD7F1B83F79C00C1126A /* LocksmithRequest.swift */; };
+		A269DD841B83F7E200C1126A /* SecretPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269DD831B83F7E200C1126A /* SecretPlace.swift */; };
+		A29F338A1B8504C0000EDD7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29F33891B8504C0000EDD7B /* Images.xcassets */; };
+		A29F338C1B85050D000EDD7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F338B1B85050D000EDD7B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +35,15 @@
 		A269DD5E1B83A58900C1126A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A269DD601B83A58900C1126A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A269DD631B83A58900C1126A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A269DD651B83A58900C1126A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A269DD681B83A58900C1126A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A269DD6E1B83A58900C1126A /* PrivatePlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivatePlacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A269DD731B83A58900C1126A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A269DD741B83A58900C1126A /* PrivatePlacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePlacesTests.swift; sourceTree = "<group>"; };
+		A269DD7E1B83F79C00C1126A /* Locksmith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locksmith.swift; sourceTree = "<group>"; };
+		A269DD7F1B83F79C00C1126A /* LocksmithRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksmithRequest.swift; sourceTree = "<group>"; };
+		A269DD831B83F7E200C1126A /* SecretPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretPlace.swift; sourceTree = "<group>"; };
+		A29F33891B8504C0000EDD7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A29F338B1B85050D000EDD7B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +87,12 @@
 			children = (
 				A269DD5E1B83A58900C1126A /* AppDelegate.swift */,
 				A269DD601B83A58900C1126A /* ViewController.swift */,
+				A269DD831B83F7E200C1126A /* SecretPlace.swift */,
 				A269DD621B83A58900C1126A /* Main.storyboard */,
-				A269DD651B83A58900C1126A /* Images.xcassets */,
+				A29F338B1B85050D000EDD7B /* LoginViewController.swift */,
 				A269DD671B83A58900C1126A /* LaunchScreen.xib */,
+				A29F33891B8504C0000EDD7B /* Images.xcassets */,
+				A269DD821B83F7A100C1126A /* LockSmith */,
 				A269DD5C1B83A58900C1126A /* Supporting Files */,
 			);
 			path = PrivatePlaces;
@@ -110,6 +121,15 @@
 				A269DD731B83A58900C1126A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A269DD821B83F7A100C1126A /* LockSmith */ = {
+			isa = PBXGroup;
+			children = (
+				A269DD7E1B83F79C00C1126A /* Locksmith.swift */,
+				A269DD7F1B83F79C00C1126A /* LocksmithRequest.swift */,
+			);
+			name = LockSmith;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +176,7 @@
 		A269DD511B83A58900C1126A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Make School";
 				TargetAttributes = {
@@ -192,9 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29F338A1B8504C0000EDD7B /* Images.xcassets in Resources */,
 				A269DD641B83A58900C1126A /* Main.storyboard in Resources */,
 				A269DD691B83A58900C1126A /* LaunchScreen.xib in Resources */,
-				A269DD661B83A58900C1126A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +233,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29F338C1B85050D000EDD7B /* LoginViewController.swift in Sources */,
+				A269DD811B83F79C00C1126A /* LocksmithRequest.swift in Sources */,
+				A269DD801B83F79C00C1126A /* Locksmith.swift in Sources */,
 				A269DD611B83A58900C1126A /* ViewController.swift in Sources */,
 				A269DD5F1B83A58900C1126A /* AppDelegate.swift in Sources */,
+				A269DD841B83F7E200C1126A /* SecretPlace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +436,7 @@
 				A269DD7A1B83A58900C1126A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A269DD7B1B83A58900C1126A /* Build configuration list for PBXNativeTarget "PrivatePlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +445,7 @@
 				A269DD7D1B83A58900C1126A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
