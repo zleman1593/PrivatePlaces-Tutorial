@@ -12,9 +12,14 @@
 		A269DD641B83A58900C1126A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A269DD621B83A58900C1126A /* Main.storyboard */; };
 		A269DD691B83A58900C1126A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A269DD671B83A58900C1126A /* LaunchScreen.xib */; };
 		A269DD751B83A58900C1126A /* PrivatePlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269DD741B83A58900C1126A /* PrivatePlacesTests.swift */; };
-		A269DD801B83F79C00C1126A /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269DD7E1B83F79C00C1126A /* Locksmith.swift */; };
-		A269DD811B83F79C00C1126A /* LocksmithRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269DD7F1B83F79C00C1126A /* LocksmithRequest.swift */; };
 		A269DD841B83F7E200C1126A /* SecretPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269DD831B83F7E200C1126A /* SecretPlace.swift */; };
+		A27C904E1BB64A5E00B8E354 /* Dictionary_Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C90471BB64A5E00B8E354 /* Dictionary_Initializers.swift */; settings = {ASSET_TAGS = (); }; };
+		A27C904F1BB64A5E00B8E354 /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C90481BB64A5E00B8E354 /* Locksmith.swift */; settings = {ASSET_TAGS = (); }; };
+		A27C90501BB64A5E00B8E354 /* LocksmithAccessibleOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C90491BB64A5E00B8E354 /* LocksmithAccessibleOption.swift */; settings = {ASSET_TAGS = (); }; };
+		A27C90511BB64A5E00B8E354 /* LocksmithError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C904A1BB64A5E00B8E354 /* LocksmithError.swift */; settings = {ASSET_TAGS = (); }; };
+		A27C90521BB64A5E00B8E354 /* LocksmithInternetAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C904B1BB64A5E00B8E354 /* LocksmithInternetAuthenticationType.swift */; settings = {ASSET_TAGS = (); }; };
+		A27C90531BB64A5E00B8E354 /* LocksmithInternetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C904C1BB64A5E00B8E354 /* LocksmithInternetProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		A27C90541BB64A5E00B8E354 /* LocksmithSecurityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C904D1BB64A5E00B8E354 /* LocksmithSecurityClass.swift */; settings = {ASSET_TAGS = (); }; };
 		A29F338A1B8504C0000EDD7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29F33891B8504C0000EDD7B /* Images.xcassets */; };
 		A29F338C1B85050D000EDD7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F338B1B85050D000EDD7B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -39,9 +44,14 @@
 		A269DD6E1B83A58900C1126A /* PrivatePlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivatePlacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A269DD731B83A58900C1126A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A269DD741B83A58900C1126A /* PrivatePlacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePlacesTests.swift; sourceTree = "<group>"; };
-		A269DD7E1B83F79C00C1126A /* Locksmith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locksmith.swift; sourceTree = "<group>"; };
-		A269DD7F1B83F79C00C1126A /* LocksmithRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksmithRequest.swift; sourceTree = "<group>"; };
 		A269DD831B83F7E200C1126A /* SecretPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretPlace.swift; sourceTree = "<group>"; };
+		A27C90471BB64A5E00B8E354 /* Dictionary_Initializers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary_Initializers.swift; sourceTree = "<group>"; };
+		A27C90481BB64A5E00B8E354 /* Locksmith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locksmith.swift; sourceTree = "<group>"; };
+		A27C90491BB64A5E00B8E354 /* LocksmithAccessibleOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksmithAccessibleOption.swift; sourceTree = "<group>"; };
+		A27C904A1BB64A5E00B8E354 /* LocksmithError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksmithError.swift; sourceTree = "<group>"; };
+		A27C904B1BB64A5E00B8E354 /* LocksmithInternetAuthenticationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksmithInternetAuthenticationType.swift; sourceTree = "<group>"; };
+		A27C904C1BB64A5E00B8E354 /* LocksmithInternetProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksmithInternetProtocol.swift; sourceTree = "<group>"; };
+		A27C904D1BB64A5E00B8E354 /* LocksmithSecurityClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksmithSecurityClass.swift; sourceTree = "<group>"; };
 		A29F33891B8504C0000EDD7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A29F338B1B85050D000EDD7B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,8 +98,8 @@
 				A269DD5E1B83A58900C1126A /* AppDelegate.swift */,
 				A269DD601B83A58900C1126A /* ViewController.swift */,
 				A269DD831B83F7E200C1126A /* SecretPlace.swift */,
-				A269DD621B83A58900C1126A /* Main.storyboard */,
 				A29F338B1B85050D000EDD7B /* LoginViewController.swift */,
+				A269DD621B83A58900C1126A /* Main.storyboard */,
 				A269DD671B83A58900C1126A /* LaunchScreen.xib */,
 				A29F33891B8504C0000EDD7B /* Images.xcassets */,
 				A269DD821B83F7A100C1126A /* LockSmith */,
@@ -126,8 +136,13 @@
 		A269DD821B83F7A100C1126A /* LockSmith */ = {
 			isa = PBXGroup;
 			children = (
-				A269DD7E1B83F79C00C1126A /* Locksmith.swift */,
-				A269DD7F1B83F79C00C1126A /* LocksmithRequest.swift */,
+				A27C90471BB64A5E00B8E354 /* Dictionary_Initializers.swift */,
+				A27C90481BB64A5E00B8E354 /* Locksmith.swift */,
+				A27C90491BB64A5E00B8E354 /* LocksmithAccessibleOption.swift */,
+				A27C904A1BB64A5E00B8E354 /* LocksmithError.swift */,
+				A27C904B1BB64A5E00B8E354 /* LocksmithInternetAuthenticationType.swift */,
+				A27C904C1BB64A5E00B8E354 /* LocksmithInternetProtocol.swift */,
+				A27C904D1BB64A5E00B8E354 /* LocksmithSecurityClass.swift */,
 			);
 			name = LockSmith;
 			sourceTree = "<group>";
@@ -176,12 +191,14 @@
 		A269DD511B83A58900C1126A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Make School";
 				TargetAttributes = {
 					A269DD581B83A58900C1126A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2RRPZLZ94D;
 					};
 					A269DD6D1B83A58900C1126A = {
 						CreatedOnToolsVersion = 6.4;
@@ -233,12 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27C904F1BB64A5E00B8E354 /* Locksmith.swift in Sources */,
 				A29F338C1B85050D000EDD7B /* LoginViewController.swift in Sources */,
-				A269DD811B83F79C00C1126A /* LocksmithRequest.swift in Sources */,
-				A269DD801B83F79C00C1126A /* Locksmith.swift in Sources */,
 				A269DD611B83A58900C1126A /* ViewController.swift in Sources */,
+				A27C90501BB64A5E00B8E354 /* LocksmithAccessibleOption.swift in Sources */,
+				A27C90521BB64A5E00B8E354 /* LocksmithInternetAuthenticationType.swift in Sources */,
+				A27C90541BB64A5E00B8E354 /* LocksmithSecurityClass.swift in Sources */,
+				A27C90531BB64A5E00B8E354 /* LocksmithInternetProtocol.swift in Sources */,
 				A269DD5F1B83A58900C1126A /* AppDelegate.swift in Sources */,
 				A269DD841B83F7E200C1126A /* SecretPlace.swift in Sources */,
+				A27C904E1BB64A5E00B8E354 /* Dictionary_Initializers.swift in Sources */,
+				A27C90511BB64A5E00B8E354 /* LocksmithError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +323,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -367,9 +390,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PrivatePlaces/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MakeSchool.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -377,9 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PrivatePlaces/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MakeSchool.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -397,6 +428,7 @@
 				);
 				INFOPLIST_FILE = PrivatePlacesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MakeSchool.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrivatePlaces.app/PrivatePlaces";
 			};
@@ -412,6 +444,7 @@
 				);
 				INFOPLIST_FILE = PrivatePlacesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MakeSchool.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrivatePlaces.app/PrivatePlaces";
 			};

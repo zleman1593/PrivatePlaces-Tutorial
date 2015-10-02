@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PrivatePlaces
 //
-//  Created by Zackery leman on 8/18/15.
+//  Created by Make School on 8/18/15.
 //  Copyright (c) 2015 Make School. All rights reserved.
 //
 

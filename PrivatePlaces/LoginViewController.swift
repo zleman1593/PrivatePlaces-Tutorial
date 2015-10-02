@@ -37,22 +37,18 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.confirmPassword.hidden = true
+        password.delegate = self
+        
         if  createdUser {
             signUp.hidden = true
+            confirmPassword.hidden = true
+        } else {
+            loginButton.hidden = true
         }
         
     }
     
     
-    
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
     
     // MARK: Signup & Login Actions
     
@@ -63,22 +59,23 @@ class LoginViewController: UIViewController {
         } else {
             
             if password.text == confirmPassword.text {
-                println("\(email.text) : \(password.text)")
-                if let error = Locksmith.updateData([email.text: password.text], forUserAccount: GlobalConstants.singleUserAccount){
-                    println(error)
-                } else {
+                print("\(email.text) : \(password.text)")
+                do {
+                    
+                    try Locksmith.updateData([self.email.text!: self.password.text!], forUserAccount: GlobalConstants.singleUserAccount)
                     createdUser = true
-                     self.confirmPassword.hidden = true
-                     self.signUp.hidden = true
+                    self.confirmPassword.hidden = true
+                    self.signUp.hidden = true
                     clearInput()
                     performSegueWithIdentifier(StoryBoard.loggingInSegue, sender: nil)
+                } catch _ {
+                    print("error")
                 }
                 
                 
                 
             } else {
-                
-                var alert = UIAlertController(title: "Sign up Error", message: "Passwords do not match. Please re-enter passwords.", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Sign up Error", message: "Passwords do not match. Please re-enter passwords.", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
                 
@@ -95,34 +92,43 @@ class LoginViewController: UIViewController {
     
     @IBAction func didTapLoginButton(sender: AnyObject) {
         
-        
-        
-        let (dictionary, error) = Locksmith.loadDataForUserAccount(GlobalConstants.singleUserAccount)
+        let dictionary = Locksmith.loadDataForUserAccount(GlobalConstants.singleUserAccount)
         if let result = dictionary {
-            if let storedPassword = result[email.text] as? String {
+            if let storedPassword = result[email.text!] as? String {
                 if storedPassword == password.text {
                     clearInput()
                     self.performSegueWithIdentifier(StoryBoard.loggingInSegue, sender: nil)
-                } else{
-                    var alert = UIAlertController(title: "Sign up Error", message: "Password and account do not Match!", preferredStyle: UIAlertControllerStyle.Alert)
-                    alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
-                    self.presentViewController(alert, animated: true, completion: nil)
-                    
+                    return
                 }
             }
-            
-            
-        } else {
-            println(error)
         }
-        
-        
-        
+        let alert = UIAlertController(title: "Sign up Error", message: "Password and account do not Match!", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
         
     }
     
     
     @IBAction func unwind(segue:UIStoryboardSegue){}
     
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    /**
+    * Called when 'return' key pressed. return NO to ignore.
+    */
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+    /**
+    * Called when the user click on the view (outside the UITextField).
+    */
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
 }

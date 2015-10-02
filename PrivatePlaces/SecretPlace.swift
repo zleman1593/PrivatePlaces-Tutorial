@@ -11,7 +11,7 @@ import CoreLocation
 import MapKit
 
 class SecretPlace: NSObject, MKAnnotation{
-    var title:String!
+    var title:String?
     var location:CLLocation!
     let coordinate: CLLocationCoordinate2D
     
